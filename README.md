@@ -1,12 +1,62 @@
-# React + Vite
+# Prueba Técnica Tecnoglass – React SPA (ReqRes + MockAPI)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación SPA en _React_ que cumple los requisitos de la prueba:
 
-Currently, two official plugins are available:
+- _Login_ con POST https://reqres.in/api/login (guarda token en localStorage)
+- _CRUD de tareas_ contra _MockAPI_ (lista, crear, editar, eliminar, toggle completed, filtros)
+- _Tecnologías: React (Hooks), \*\*Bootstrap_, react-router-dom, \*\*axios`
+- _Sin Redux_ ni frameworks UI adicionales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Cómo ejecutar
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> Requisitos: Node 18+ (recomendado Node 20) y npm.
+
+```bash
+# 1) Instalar dependencias
+npm install
+
+# 2) Crear archivo .env (ver sección Variables de Entorno)
+#    y pegar ahí tu URL de MockAPI.
+
+# 3) Ejecutar en desarrollo
+npm run dev
+```
+
+## 🌐 Api MockApi
+https://689dfe97ce755fe6978ab9d9.mockapi.io/tarea/v1
+
+## 🖼️ Capturas
+
+<p align="center">
+  <img src="docs/capturas/001-login.png" alt="Login" width="520">
+  <br/>
+  <sub><b>Login</b></sub>
+</p>
+
+<p align="center">
+  <span style="display:inline-block; text-align:center;">
+    <img src="docs/capturas/005-lista.png" alt="Listado" width="360">
+    <br/>
+    <sub><b>Listado de tareas</b></sub>
+  </span>
+  &nbsp;&nbsp;&nbsp;
+  <span style="display:inline-block; text-align:center;">
+    <img src="docs/capturas/002-lista.jpg" alt="Listado Completado" width="360">
+    <br/>
+    <sub><b>Listado de tareas completadas</b></sub>
+  </span>
+  &nbsp;&nbsp;&nbsp;
+  <span style="display:inline-block; text-align:center;">
+    <img src="docs/capturas/004-lista.jpg" alt="Listado Pendiente" width="360">
+    <br/>
+    <sub><b>Listado de tareas pendientes</b></sub>
+  </span>
+  &nbsp;&nbsp;&nbsp;
+  <span style="display:inline-block; text-align:center;">
+    <img src="docs/capturas/003-mockapi.jpg" alt="MockApi" width="360">
+    <br/>
+    <sub><b>Interfaz admin de mockapi.io</b></sub>
+  </span>
+</p>
